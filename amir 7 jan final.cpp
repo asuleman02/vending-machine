@@ -40,7 +40,7 @@ int main() {
         cout << "\nEnter item number (0 to exit): ";
         cin >> choice;
 
-        // ✅ Input validation for choice (handles letters, etc.)
+        //  Input validation for choice (handles letters, etc.)
         if (cin.fail()) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -100,7 +100,7 @@ int main() {
         cout << "Insert money: ";
         cin >> money;
 
-        // ✅ Input validation for money (handles letters + negative)
+        //  Input validation for money (handles letters + negative)
         if (cin.fail() || money < 0) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -126,3 +126,4 @@ int main() {
 
     return 0;
 }
+
